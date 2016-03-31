@@ -1,0 +1,312 @@
+{
+    "responseMessageType": null,
+    "responseType": "SUCCESS",
+    "responseMessage": null,
+    "prevYearRevenueBase": 26808559.06,
+    "paToolVariance": 0,
+    "currYearRevForecast": 26808623.06,
+    "currYearRevManual": 0,
+    "paList": [
+        {
+            "type": "Previous Year",
+            "paTool": 26808559.06,
+            "paToolEdit": 26808559.06,
+            "runningTotals": 26808559.06,
+            "open": 0,
+            "close": 26808559.06,
+            "color": "Black",
+            "shiftType": ""
+        },
+        {
+            "type": "Current Year Manual Target",
+            "paTool": 0,
+            "paToolEdit": 0,
+            "runningTotals": 26808559.06,
+            "open": 26808559.06,
+            "close": 26808559.06,
+            "color": "",
+            "shiftType": "M"
+        },
+        {
+            "type": "Inventory Charges (Recalc)",
+            "paTool": 0,
+            "paToolEdit": 50,
+            "runningTotals": 26808509.06,
+            "open": 26808509.06,
+            "close": 26808559.06,
+            "color": "red",
+            "shiftType": "N"
+        },
+        {
+            "type": "MVS - Alliance",
+            "paTool": 0,
+            "paToolEdit": 0,
+            "runningTotals": 26808509.06,
+            "open": 26808509.06,
+            "close": 26808509.06,
+            "color": "",
+            "shiftType": "N"
+        },
+        {
+            "type": "MVS - MTSS",
+            "paTool": 0,
+            "paToolEdit": 0,
+            "runningTotals": 26808509.06,
+            "open": 26808509.06,
+            "close": 26808509.06,
+            "color": "",
+            "shiftType": "N"
+        },
+        {
+            "type": "MVS - MVSS",
+            "paTool": 0,
+            "paToolEdit": 0,
+            "runningTotals": 26808509.06,
+            "open": 26808509.06,
+            "close": 26808509.06,
+            "color": "",
+            "shiftType": "N"
+        },
+        {
+            "type": "Platform Shift / Consolidation",
+            "paTool": 0,
+            "paToolEdit": 0,
+            "runningTotals": 26808509.06,
+            "open": 26808509.06,
+            "close": 26808509.06,
+            "color": "",
+            "shiftType": "N"
+        },
+        {
+            "type": "SWS - Premium Services",
+            "paTool": 0,
+            "paToolEdit": 0,
+            "runningTotals": 26808509.06,
+            "open": 26808509.06,
+            "close": 26808509.06,
+            "color": "",
+            "shiftType": "N"
+        },
+        {
+            "type": "SWS - Software Support",
+            "paTool": 0,
+            "paToolEdit": 0,
+            "runningTotals": 26808509.06,
+            "open": 26808509.06,
+            "close": 26808509.06,
+            "color": "",
+            "shiftType": "N"
+        },
+        {
+            "type": "Tech Refresh (Power)",
+            "paTool": 0,
+            "paToolEdit": 0,
+            "runningTotals": 26808509.06,
+            "open": 26808509.06,
+            "close": 26808509.06,
+            "color": "",
+            "shiftType": "N"
+        },
+        {
+            "type": "Tech Refresh (Storage)",
+            "paTool": 0,
+            "paToolEdit": 0,
+            "runningTotals": 26808509.06,
+            "open": 26808509.06,
+            "close": 26808509.06,
+            "color": "",
+            "shiftType": "N"
+        },
+        {
+            "type": "Tech Refresh (iSeries)",
+            "paTool": 0,
+            "paToolEdit": 0,
+            "runningTotals": 26808509.06,
+            "open": 26808509.06,
+            "close": 26808509.06,
+            "color": "",
+            "shiftType": "N"
+        },
+        {
+            "type": "Tech Refresh (xSeries)",
+            "paTool": 0,
+            "paToolEdit": 0,
+            "runningTotals": 26808509.06,
+            "open": 26808509.06,
+            "close": 26808509.06,
+            "color": "",
+            "shiftType": "N"
+        },
+        {
+            "type": "Tech Refresh (zSeries)",
+            "paTool": 0,
+            "paToolEdit": 0,
+            "runningTotals": 26808509.06,
+            "open": 26808509.06,
+            "close": 26808509.06,
+            "color": "",
+            "shiftType": "N"
+        },
+        {
+            "type": "General Price Increase",
+            "paTool": 0,
+            "paToolEdit": 0,
+            "runningTotals": 26808509.06,
+            "open": 26808509.06,
+            "close": 26808509.06,
+            "color": "",
+            "shiftType": "P"
+        },
+        {
+            "type": "ITS Services",
+            "paTool": 0,
+            "paToolEdit": 0,
+            "runningTotals": 26808509.06,
+            "open": 26808509.06,
+            "close": 26808509.06,
+            "color": "",
+            "shiftType": "P"
+        },
+        {
+            "type": "MVS - Alliance",
+            "paTool": 0,
+            "paToolEdit": 0,
+            "runningTotals": 26808509.06,
+            "open": 26808509.06,
+            "close": 26808509.06,
+            "color": "",
+            "shiftType": "P"
+        },
+        {
+            "type": "MVS - MTSS",
+            "paTool": 0,
+            "paToolEdit": 0,
+            "runningTotals": 26808509.06,
+            "open": 26808509.06,
+            "close": 26808509.06,
+            "color": "",
+            "shiftType": "P"
+        },
+        {
+            "type": "MVS - MVSS",
+            "paTool": 0,
+            "paToolEdit": 0,
+            "runningTotals": 26808509.06,
+            "open": 26808509.06,
+            "close": 26808509.06,
+            "color": "",
+            "shiftType": "P"
+        },
+        {
+            "type": "New Equipment (Power)",
+            "paTool": 0,
+            "paToolEdit": 0,
+            "runningTotals": 26808509.06,
+            "open": 26808509.06,
+            "close": 26808509.06,
+            "color": "",
+            "shiftType": "P"
+        },
+        {
+            "type": "New Equipment (Storage)",
+            "paTool": 0,
+            "paToolEdit": 0,
+            "runningTotals": 26808509.06,
+            "open": 26808509.06,
+            "close": 26808509.06,
+            "color": "",
+            "shiftType": "P"
+        },
+        {
+            "type": "New Equipment (iSeries)",
+            "paTool": 0,
+            "paToolEdit": 0,
+            "runningTotals": 26808509.06,
+            "open": 26808509.06,
+            "close": 26808509.06,
+            "color": "",
+            "shiftType": "P"
+        },
+        {
+            "type": "New Equipment (xSeries)",
+            "paTool": 0,
+            "paToolEdit": 0,
+            "runningTotals": 26808509.06,
+            "open": 26808509.06,
+            "close": 26808509.06,
+            "color": "",
+            "shiftType": "P"
+        },
+        {
+            "type": "New Equipment (zSeries)",
+            "paTool": 0,
+            "paToolEdit": 0,
+            "runningTotals": 26808509.06,
+            "open": 26808509.06,
+            "close": 26808509.06,
+            "color": "",
+            "shiftType": "P"
+        },
+        {
+            "type": "SWS - Premium Services",
+            "paTool": 0,
+            "paToolEdit": 14,
+            "runningTotals": 26808523.06,
+            "open": 26808509.06,
+            "close": 26808523.06,
+            "color": "#8EB38E",
+            "shiftType": "P"
+        },
+        {
+            "type": "SWS - Software Support",
+            "paTool": 0,
+            "paToolEdit": 100,
+            "runningTotals": 26808623.06,
+            "open": 26808523.06,
+            "close": 26808623.06,
+            "color": "#8EB38E",
+            "shiftType": "P"
+        },
+        {
+            "type": "Y2Y Delta",
+            "paTool": 64,
+            "paToolEdit": 64,
+            "runningTotals": 0,
+            "open": 26808623.06,
+            "close": 26808687.06,
+            "color": "#8EB38E",
+            "shiftType": null
+        },
+        {
+            "type": "Current Forecast",
+            "paTool": 26808623.06,
+            "paToolEdit": 26808623.06,
+            "runningTotals": 0,
+            "open": 0,
+            "close": 26808623.06,
+            "color": "#0B0B61",
+            "shiftType": null
+        },
+        {
+            "type": "GAP to Target",
+            "paTool": 0,
+            "paToolEdit": 26808623.06,
+            "runningTotals": 0,
+            "open": 26808623.06,
+            "close": 0,
+            "color": "#81F7BE",
+            "shiftType": null
+        },
+        {
+            "type": "Current Target",
+            "paTool": 0,
+            "paToolEdit": 0,
+            "runningTotals": 0,
+            "open": 0,
+            "close": 0,
+            "color": "#81F7BE",
+            "shiftType": null
+        }
+    ],
+    "y2YDelta": 64
+}

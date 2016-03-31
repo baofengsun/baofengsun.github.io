@@ -1,0 +1,134 @@
+<html>
+<head>
+<script src="jquery.1.11.1.js" type="text/javascript"></script>
+<script src="amcharts.js" type="text/javascript"></script>
+<script src="serial.js" type="text/javascript"></script>    
+
+</head>
+
+
+<body>
+
+<h1>It works! a a aaa haha</h1>
+  <div id="chartdiv" style="height:810px; min-width:958px; background:#fff;"></div>   
+
+
+
+
+</body>
+
+<script>
+var revenueTableData = "";
+$.ajax({
+				url: "data.json",
+				success: function (data) {
+				for(var i = 0; i<data.paList.length; i++){
+							var val = data.paList[i];
+							val.open = val.open?(val.open/1000000).toFixed(2):null;
+							val.close = val.close?(val.close/1000000).toFixed(2):null;
+				}
+					revenueTableData = data.paList;
+					console.log(revenueTableData);
+					
+					
+					
+					var revChart;
+			
+            var clientChartData = revenueTableData;
+			var ClientChartFinalData = [];
+			function filterClientData(){
+				ClientChartFinalData = [];
+				
+							for(var i=0; i<clientChartData.length;i++){
+								if(clientChartData[i].paToolEdit == ""){
+									clientChartData[i].paToolEdit = 0;
+								}
+								if(clientChartData[i].paTool == ""){
+									clientChartData[i].paTool = 0;
+								}
+								if (((clientChartData[i].paToolEdit == 0) && (clientChartData[i].paTool == 0))) { 
+									
+								} else {
+									//if((clientChartData[i].type != "Previous Year") && (clientChartData[i].type != "Current Forecast") && (clientChartData[i].type != "Y2Y Delta")  && (clientChartData[i].type != "Current Target")  && (clientChartData[i].type != "GAP to Target")){
+										
+										if(clientChartData[i].shiftType == "N"){
+											clientChartData[i].paToolEdit = 0 - clientChartData[i].paToolEdit;
+										}
+										clientChartData[i].paToolEdit = (clientChartData[i].paToolEdit/1000000).toFixed(2);
+										if(clientChartData[i].paToolEdit === "-0.00"){
+											clientChartData[i].paToolEdit = "0.00";
+										}
+									//}
+									ClientChartFinalData.push(clientChartData[i]);
+								}
+							}
+						};
+			 filterClientData();
+console.log("final = ");
+console.log(ClientChartFinalData);
+var revChart = new AmCharts.AmSerialChart();
+revChart.dataProvider = ClientChartFinalData;
+				revChart.categoryField = "type";
+				revChart.categoryAxis = {
+					gridPosition : "start",
+					labelRotation: 65
+				  };
+
+                revChart.columnWidth = 0.6;
+               // revChart.startDuration = 1; Bao Feng comments
+
+                // AXES
+                // Category
+				//debugger;
+                var categoryAxis = revChart.categoryAxis;
+                categoryAxis.gridAlpha = 0.1;
+                categoryAxis.axisAlpha = 0;
+                categoryAxis.gridPosition = "start";
+				categoryAxis.minorTickLength = 0;
+				categoryAxis.axisColor = "#BBBBBB";
+				categoryAxis.axisThickness = 10;
+                // Value
+                
+                var valueAxis = new AmCharts.ValueAxis();
+                valueAxis.gridAlpha = 0.1;
+                valueAxis.axisAlpha = 1;
+				//valueAxis.maximum = 30;
+				valueAxis.tickLength = 2;
+				valueAxis.minorTickLength = 1;
+				valueAxis.autoGridCount = false;
+				valueAxis.gridCount = 100;
+				//valueAxis.unit = "TEST";
+				
+				valueAxis.showFirstLabel = false;
+				valueAxis.labelFrequency = 1;
+				console.log(valueAxis.tickLength);
+                revChart.addValueAxis(valueAxis);
+				
+
+                
+
+                // GRAPH                          
+                var graph = new AmCharts.AmGraph();
+                graph.valueField = "close";
+                graph.openField = "open";
+                graph.type = "column";
+                graph.lineAlpha = 0.5;
+                graph.lineColor = "#BBBBBB";
+                graph.colorField = "color";
+                graph.fillAlphas = 0.8;
+                graph.balloonText = "<span style='color:[[color]]'>[[category]]</span><br><span style='font-size:13px;'><b>$[[paToolEdit]] Mln</b></span>";
+                graph.labelText = "[[paToolEdit]]";
+                revChart.addGraph(graph);
+
+                // WRITE                  
+                revChart.write("chartdiv");
+				}
+			});
+			
+			
+			
+
+
+</script>
+
+</html>
